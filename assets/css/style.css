@@ -882,6 +882,30 @@ main {
   margin-bottom: 25px;
 }
 
+//Chatgpt
+
+.blog-post {
+    display: none;
+    margin-top: 20px;
+}
+
+.blog-image {
+    margin-bottom: 20px;
+}
+
+.blog-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-link {
+    cursor: pointer;
+}
+
+//Chatgpt
+
+
 .filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
