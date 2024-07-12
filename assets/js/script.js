@@ -116,20 +116,19 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // Blog post toggle functionality
 document.addEventListener("DOMContentLoaded", function() {
-  const projectLinks = document.querySelectorAll(".project-link");
+    const projectLinks = document.querySelectorAll(".project-link");
 
-  projectLinks.forEach(link => {
-    link.addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent the default anchor behavior
-      const blogPost = this.nextElementSibling;
-      if (blogPost.style.display === "none" || blogPost.style.display === "") {
-        blogPost.style.display = "block";
-      } else {
-        blogPost.style.display = "none";
-      }
+    projectLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+
+            // Toggle the visibility of the blog post content
+            const blogPost = this.parentNode.querySelector(".blog-post");
+            blogPost.classList.toggle("active");
+        });
     });
-  });
 });
+
 
 // Page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
