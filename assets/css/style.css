@@ -1028,6 +1028,30 @@ main {
 }
 
 
+/* Existing styles for portfolio section */
+
+/* Add the following styles for blog post expansion */
+.blog-post {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.blog-image {
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    cursor: pointer;
+}
 
 
 
