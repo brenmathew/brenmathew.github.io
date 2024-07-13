@@ -122,8 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", function(event) {
             event.preventDefault(); // Prevent the default anchor behavior
 
-            // Toggle the visibility of the blog post content
-            const blogPost = this.parentNode.querySelector(".blog-post");
+            // Toggle the visibility of the next sibling `.blog-post`
+            const blogPost = this.nextElementSibling;
             blogPost.classList.toggle("active");
         });
     });
