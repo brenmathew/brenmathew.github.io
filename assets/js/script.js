@@ -117,6 +117,7 @@ for (let i = 0; i < formInputs.length; i++) {
 // Blog post toggle functionality
 document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
+    const backButtons = document.querySelectorAll(".back-button");
 
     projectLinks.forEach(link => {
         link.addEventListener("click", function(event) {
@@ -125,16 +126,17 @@ document.addEventListener("DOMContentLoaded", function() {
             // Toggle the visibility of the next sibling `.blog-post`
             const blogPost = this.nextElementSibling;
             blogPost.classList.toggle("active");
+
+            console.log("Project link clicked. Blog post visibility toggled.");
         });
     });
-
-    // Add event listeners for back buttons
-    const backButtons = document.querySelectorAll(".back-button");
 
     backButtons.forEach(button => {
         button.addEventListener("click", function() {
             const blogPost = this.parentNode;
             blogPost.classList.remove("active");
+
+            console.log("Back button clicked. Blog post collapsed.");
         });
     });
 });
