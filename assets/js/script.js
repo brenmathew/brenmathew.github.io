@@ -127,9 +127,17 @@ document.addEventListener("DOMContentLoaded", function() {
             blogPost.classList.toggle("active");
         });
     });
+
+    // Add event listeners for back buttons
+    const backButtons = document.querySelectorAll(".back-button");
+
+    backButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const blogPost = this.parentNode;
+            blogPost.classList.remove("active");
+        });
+    });
 });
-
-
 
 // Page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
