@@ -117,19 +117,29 @@ for (let i = 0; i < formInputs.length; i++) {
 // Blog post toggle functionality
 document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
-    const backButtons = document.querySelectorAll(".back-button");
 
     projectLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault(); // Prevent the default anchor behavior
 
-            // Toggle the visibility of the next sibling `.blog-post`
-            const blogPost = this.nextElementSibling;
-            blogPost.classList.toggle("active");
-
-            console.log("Project link clicked. Blog post visibility toggled.");
+            // Toggle the visibility of the blog post content
+            const blogPost = this.parentNode.querySelector(".blog-post");
+            if (blogPost) {
+                blogPost.classList.toggle("active");
+            }
         });
     });
+
+    const backButtons = document.querySelectorAll(".back-button");
+
+    backButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const blogPost = this.closest(".blog-post");
+            blogPost.classList.remove("active");
+        });
+    });
+});
+
 
     backButtons.forEach(button => {
         button.addEventListener("click", function() {
