@@ -1039,6 +1039,9 @@ main {
     border: 1px solid #ccc;
 }
 
+.blog-post.active {
+    display: block;
+}
 .blog-image {
     margin-bottom: 10px;
 }
