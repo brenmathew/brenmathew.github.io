@@ -115,6 +115,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 // Blog post toggle functionality
+// Blog post toggle functionality
 document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
 
@@ -129,6 +130,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    const backButtons = document.querySelectorAll(".back-button");
+
+    backButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const blogPost = this.closest(".blog-post");
+            blogPost.classList.remove("active");
+        });
+    });
+});
+
 
     const backButtons = document.querySelectorAll(".back-button");
 
