@@ -940,11 +940,7 @@ main {
   margin-bottom: 10px;
 }
 
-/* Existing styles for project-item */
-
-.project-item { 
-  display: none; 
-}
+.project-item { display: none; }
 
 .project-item.active {
   display: block;
@@ -961,7 +957,7 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px; /* Adjust the height as needed */
+  height: 200px;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1015,9 +1011,7 @@ main {
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
-.project-category { 
-  margin-left: 10px; 
-}
+.project-category { margin-left: 10px; }
 
 .project-title {
   color: var(--white-2);
@@ -1033,7 +1027,10 @@ main {
   font-weight: var(--fw-300);
 }
 
-/* Styles for blog post expansion */
+
+/* Existing styles for portfolio section */
+
+/* Add the following styles for blog post expansion */
 .blog-post {
     display: none;
     margin-top: 20px;
@@ -1045,7 +1042,6 @@ main {
 .blog-post.active {
     display: block;
 }
-
 .blog-image {
     margin-bottom: 10px;
 }
