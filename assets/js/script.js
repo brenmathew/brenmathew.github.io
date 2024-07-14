@@ -121,15 +121,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     projectLinks.forEach(link => {
         link.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent the default anchor behavior
+            if (event.target.classList.contains("project-link")) {
+                event.preventDefault(); // Prevent the default anchor behavior
 
-            // Toggle the visibility of the blog post content
-            const blogPost = this.parentNode.querySelector(".blog-post");
-            if (blogPost) {
-                blogPost.classList.toggle("active");
+                // Toggle the visibility of the blog post content
+                const blogPost = this.parentNode.querySelector(".blog-post");
+                if (blogPost) {
+                    blogPost.classList.toggle("active");
+                }
             }
         });
     });
+
+    const backButtons = document.querySelectorAll(".back-button");
+
+    backButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const blogPost = this.closest(".blog-post");
+            blogPost.classList.remove("active");
+        });
+    });
+});
+
 
     const backButtons = document.querySelectorAll(".back-button");
 
