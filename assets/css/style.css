@@ -750,7 +750,7 @@ main {
   filter: grayscale(1);
   transition: var(--transition-1);
   height: auto; /* Keeps the aspect ratio */
-  max-height: 100px; /* Adjust the height as needed */
+  max-height: 250px; /* Adjust the height as needed */
   object-fit: contain; /* Ensures the image fits within the dimensions without distortion */
 
 }
