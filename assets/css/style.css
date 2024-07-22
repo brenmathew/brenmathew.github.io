@@ -3,13 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -746,14 +739,18 @@ main {
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
+  display: flex; /* Added to center images */
+  justify-content: center; /* Added to center images */
+  align-items: center; /* Added to center images */
 }
 
 .clients-item img {
-  width: 100%;
+  width: auto;
+  max-width: 100%; /* Ensure it doesn't overflow the container */
   filter: grayscale(1);
   transition: var(--transition-1);
   height: auto; /* Keeps the aspect ratio */
-  max-height: 50px; /* Adjust the height as needed */
+  max-height: 100px; /* Adjust the height as needed */
   object-fit: contain; /* Ensures the image fits within the dimensions without distortion */
 
 }
