@@ -30,5 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     // If accessed directly, redirect back to the contact page
     header('Location: index.html');
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+    
 }
 ?>
