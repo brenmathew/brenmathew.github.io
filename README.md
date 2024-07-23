@@ -6,9 +6,10 @@ Personal portfolio
 [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
 [![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+This is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
 ## Demo
+Here are some demo images:
 
 ![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
 ![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
@@ -19,21 +20,11 @@ Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-## Installing vCard
+## Setting up your portfolio
 
-To install **vCard**, follow these steps:
+To set up your own portfolio, make sure to clone this repository and make the necessary changes.
+The changes need to done primarily in the HTML, CSS and Javascript files. The images need to be modified as per your requirements.
 
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
 
 ## Contact
 
