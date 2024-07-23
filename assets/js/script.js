@@ -159,44 +159,21 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }); */
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const projectLinks = document.querySelectorAll(".project-link");
+ document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll("[data-filter-btn]");
+    const projectItems = document.querySelectorAll(".project-item");
 
-    projectLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent the default anchor behavior
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const filterValue = this.textContent.toLowerCase();
 
-            const projectItem = this.parentElement;
-            const blogPost = projectItem.querySelector(".blog-post");
-
-            // Toggle the active class
-            blogPost.classList.toggle("active");
-
-            // Hide all other project items
-            document.querySelectorAll(".project-item").forEach(item => {
-                if (item !== projectItem) {
+            projectItems.forEach(item => {
+                const category = item.getAttribute("data-category").toLowerCase();
+                if (filterValue === "all" || category === filterValue) {
+                    item.style.display = "flex";
+                } else {
                     item.style.display = "none";
                 }
-            });
-
-            // Show the project item with expanded details
-            projectItem.style.display = "flex";
-        });
-    });
-
-    // Back button functionality
-    const backButtons = document.querySelectorAll(".back-button");
-    backButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            const projectItem = this.closest(".project-item");
-            const blogPost = projectItem.querySelector(".blog-post");
-
-            // Remove the active class
-            blogPost.classList.remove("active");
-
-            // Show all project items
-            document.querySelectorAll(".project-item").forEach(item => {
-                item.style.display = "flex";
             });
         });
     });
