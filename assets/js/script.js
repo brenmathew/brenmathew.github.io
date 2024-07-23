@@ -135,7 +135,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 //ChatGPT
-document.addEventListener("DOMContentLoaded", function() {
+<!-- document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
 
     projectLinks.forEach(link => {
@@ -157,7 +157,51 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll(".project-item").forEach(item => item.style.display = "flex");
     });
   });
+}); -->
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const projectLinks = document.querySelectorAll(".project-link");
+
+    projectLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+
+            const projectItem = this.parentElement;
+            const blogPost = projectItem.querySelector(".blog-post");
+
+            // Toggle the active class
+            blogPost.classList.toggle("active");
+
+            // Hide all other project items
+            document.querySelectorAll(".project-item").forEach(item => {
+                if (item !== projectItem) {
+                    item.style.display = "none";
+                }
+            });
+
+            // Show the project item with expanded details
+            projectItem.style.display = "flex";
+        });
+    });
+
+    // Back button functionality
+    const backButtons = document.querySelectorAll(".back-button");
+    backButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const projectItem = this.closest(".project-item");
+            const blogPost = projectItem.querySelector(".blog-post");
+
+            // Remove the active class
+            blogPost.classList.remove("active");
+
+            // Show all project items
+            document.querySelectorAll(".project-item").forEach(item => {
+                item.style.display = "flex";
+            });
+        });
+    });
 });
+
 
 
 
