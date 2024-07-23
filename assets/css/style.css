@@ -1295,6 +1295,9 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  width: calc(100% - 22px); /* Adjusted width to accommodate padding and border */
+  box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+}
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }
@@ -1329,6 +1332,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  border: none; /* Remove border to avoid unexpected styling */
+  cursor: pointer; /* Ensure cursor changes to pointer on hover */
 }
 
 .form-btn::before {
