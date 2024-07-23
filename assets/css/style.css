@@ -1123,8 +1123,7 @@ main {
 /* Existing styles for portfolio section */
 
 /* Add the following styles for blog post expansion */
-<!-- 
-
+ 
 .blog-post {
     display: none;
     margin-top: 20px;
@@ -1150,14 +1149,6 @@ main {
     cursor: pointer;
 }
 
-.project-details {
-  display: none;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ddd;
-  margin-top: 10px;
-}
-
 .back-button {
   background-color: #007bff;
   color: white;
@@ -1171,7 +1162,6 @@ main {
   background-color: #0056b3;
 }
 
--->
 
 
 
