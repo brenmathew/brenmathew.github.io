@@ -1225,21 +1225,21 @@
     </form> -->
 
     <form action="https://formspree.io/f/mdknaddy" method="POST">
-      <label>
-        Your name:
-        <input type="name" name="name" required>
-      </label>
-      <label>
-        Your email:
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Your message:
-        <textarea name="message" required></textarea>
-      </label>
-      <!-- your other form fields go here if needed -->
-      <button type="submit">Send</button>
+        <div class="input-wrapper">
+          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
+        <div class="input-wrapper">
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        </div>
+        <button class="form-btn" type="submit" name="submit" disabled data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
     </form>
+
 
     
   </section>
