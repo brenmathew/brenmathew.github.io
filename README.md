@@ -37,7 +37,8 @@ git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 
 ## Contact
 
-If you want to contact me you can reach me at [LinkedIn]([https://in.linkedin.com/in/bren-mathew-3a6371169]).
+If you want to contact me, you can reach me at [LinkedIn](https://in.linkedin.com/in/bren-mathew-3a6371169).
+
 
 ## License
 
