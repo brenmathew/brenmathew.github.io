@@ -1123,6 +1123,8 @@ main {
 /* Existing styles for portfolio section */
 
 /* Add the following styles for blog post expansion */
+<!-- 
+
 .blog-post {
     display: none;
     margin-top: 20px;
@@ -1168,6 +1170,8 @@ main {
 .back-button:hover {
   background-color: #0056b3;
 }
+
+-->
 
 
 
