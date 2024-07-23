@@ -135,7 +135,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 //ChatGPT
-<!-- document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
 
     projectLinks.forEach(link => {
@@ -149,23 +149,7 @@ for (let i = 0; i < formInputs.length; i++) {
             }
         });
     });
-}); -->
-
-  document.addEventListener("DOMContentLoaded", function () {
-  const projectLinks = document.querySelectorAll(".project-link");
-  const projectDetails = document.querySelectorAll(".project-details");
-  const backButtons = document.querySelectorAll(".back-button");
-
-  projectLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const projectId = this.getAttribute("data-project-id");
-      const details = document.getElementById(`details-${projectId}`);
-      projectDetails.forEach(detail => detail.style.display = "none");
-      details.style.display = "block";
-      this.parentElement.style.display = "none";
-    });
-  });
+}); 
 
   backButtons.forEach(button => {
     button.addEventListener("click", function () {
