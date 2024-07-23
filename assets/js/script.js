@@ -135,7 +135,7 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 //ChatGPT
-<!-- document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
     const projectLinks = document.querySelectorAll(".project-link");
 
     projectLinks.forEach(link => {
@@ -157,7 +157,7 @@ for (let i = 0; i < formInputs.length; i++) {
       document.querySelectorAll(".project-item").forEach(item => item.style.display = "flex");
     });
   });
-}); -->
+}); */
 
   document.addEventListener("DOMContentLoaded", function () {
     const projectLinks = document.querySelectorAll(".project-link");
