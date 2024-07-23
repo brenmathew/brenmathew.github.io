@@ -1148,20 +1148,27 @@ main {
     cursor: pointer;
 }
 
+.project-details {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
 .back-button {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .back-button:hover {
-    background-color: #bbb;
+  background-color: #0056b3;
 }
+
 
 
 
