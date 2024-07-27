@@ -206,7 +206,7 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">LOADING....</h2>
         </header>
 
         <section class="about-text">
@@ -768,101 +768,76 @@
         <section class="projects">
 
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Data Analytics</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Visualization</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>SQL</button>
             </li>
-
           </ul>
-
+          
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
-
+          
             <ul class="select-list">
-
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Data Analytics</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Visualization</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>SQL</button>
               </li>
-
             </ul>
-
           </div>
-          
-          
+
+
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+        <li class="project-item active" data-filter-item data-category="Data Analytics">
+        <a href="#" class="project-link">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+          </figure>
+          <h3 class="project-title">Finance</h3>
+          <p class="project-category">Data Analytics</p>
+        </a>
+      </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">Finance</h3>
+           <li class="project-item active" data-filter-item data-category="Visualization">
+            <a href="#" class="project-link">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+              </figure>
+              <h3 class="project-title">Orizon</h3>
+              <p class="project-category">Visualization</p>
+            </a>
+          </li>
 
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-          
-          
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="SQL">
               <a href="#">
 
                 <figure class="project-img">
@@ -875,10 +850,10 @@
 
                 <h3 class="project-title">Fundo</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">SQL</p>
 
               </a>
-            </li>  
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
@@ -990,6 +965,64 @@
 
           </ul>
 
+          
+<!--
+    - #EXPANSION OF PORTFOLIO POSTS
+  -->
+          
+          <div class="portfolio-modal-container" id="project-modal">
+            <div class="portfolio-overlay"></div>
+            <div class="portfolio-modal">
+              <span class="portfolio-modal-close-btn">&times;</span>
+              <div class="modal-image">
+                <img src="./assets/images/project-1.jpg" alt="Project Detail Image" loading="lazy">
+              </div>
+              <h3 class="portfolio-modal-title">Project Title</h3>
+              <p class="modal-date">14 June, 2021</p>
+              <p class="portfolio-modal-content">
+                To summarize, this project stands out due to its balance of technical aspects and innovative solutions. Detailed explanations about its components and functioning are available here.
+              </p>
+              <div class="additional-content">
+                <div class="blog-image">
+                  <img src="./assets/images/project-1.jpg" alt="Additional Image" loading="lazy">
+                </div>
+                <p class="blog-description">This is an additional description for more details.</p>
+                <div class="blog-image">
+                  <img src="./assets/images/project-1.jpg" alt="Another Image" loading="lazy">
+                </div>
+              </div>
+              
+              <!-- Add this button at the end of the modal -->
+              <a href="https://github.com/brenmathew" class="project-link-button" target="_blank">Link to the entire project</a> 
+            </div>
+          </div>
+
+          <div class="portfolio-modal-container" id="project-modal-2">
+            <div class="portfolio-overlay"></div>
+            <div class="portfolio-modal">
+              <span class="portfolio-modal-close-btn">&times;</span>
+              <div class="modal-image">
+                <img src="./assets/images/project-2.png" alt="Project Detail Image" loading="lazy">
+              </div>
+              <h3 class="portfolio-modal-title">Orizon</h3>
+              <p class="modal-date">14 June, 2021</p>
+              <p class="portfolio-modal-content">
+                To summarize, this project stands out due to its balance of technical aspects and innovative solutions. Detailed explanations about its components and functioning are available here.
+              </p>
+              <div class="additional-content">
+                <div class="blog-image">
+                  <img src="./assets/images/project-2.png" alt="Additional Image" loading="lazy">
+                </div>
+                <p class="blog-description">This is an additional description for more details.</p>
+                <div class="blog-image">
+                  <img src="./assets/images/project-2.png" alt="Another Image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
         </section>
 
       </article>

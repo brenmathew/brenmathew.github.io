@@ -1123,45 +1123,171 @@ main {
 /* Existing styles for portfolio section */
 
 /* Add the following styles for blog post expansion */
- 
-.blog-post {
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+
+.project-item.active .blog-post {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
 }
 
-.blog-post.active {
-    display: block;
-}
-.blog-image {
-    margin-bottom: 10px;
+.project-item.active.expanded .project-link {
+  display: none;
 }
 
-.blog-description {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+.project-item.active.expanded .blog-post {
+  display: block;
 }
 
-.project-link {
-    cursor: pointer;
-}
-
-.back-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
-.back-button:hover {
-  background-color: #0056b3;
+
+/* Add the following styles for blog post expansion */
+
+/* Modal styles */
+
+/* Portfolio Modal Styles */
+.portfolio-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Make sure the modal is above other elements */
 }
 
+.portfolio-modal-container.active {
+  display: flex;
+}
+
+.portfolio-modal {
+  background: var(--eerie-black-2);
+  color: var(--white-2);
+  position: relative;
+  padding: 15px;
+  margin: 15px 12px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  box-shadow: var(--shadow-5);
+  transform: scale(1.2);
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 2;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.portfolio-modal-container.active .portfolio-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.portfolio-modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--onyx);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-2);
+  font-size: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.portfolio-modal-close-btn:hover {
+  opacity: 1;
+  background-color: var(--light-gray); /* Change background color on hover */
+}
+
+
+
+.portfolio-modal-title {
+  margin-bottom: 4px;
+  font-size: var(--fs-6);
+  font-weight: bold;
+}
+
+.portfolio-modal-content, .final-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
+
+.blog-description {
+  color: var(--light-gray);
+  margin: 10px 0;
+}
+
+.additional-content {
+  margin-top: 20px;
+}
+
+.blog-image {
+  margin-bottom: 10px;
+}
+
+
+/* Customize the scroll bar */
+
+.portfolio-modal::-webkit-scrollbar {
+  width: 8px; /* Width of the scroll bar */
+  background-color: var(--jet); /* Background color of the scroll bar */
+}
+
+/* Style the scroll bar thumb */
+
+.portfolio-modal::-webkit-scrollbar-thumb {
+  background-color: var(--onyx); /* Scroll bar thumb color */
+  border-radius: 4px; /* Rounded corners for the scroll bar thumb */
+  box-shadow: inset 0 0 5px var(--eerie-black-2); /* Subtle shadow for depth */
+}
+
+/* Hover effect for the scroll bar thumb */
+.portfolio-modal::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-gray); /* Color on hover */
+}
+
+/* LINK TO RESUME BUTTON STYLES  */
+
+.project-link-button {
+  position: sticky;
+  display: inline-block;
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  background-color: var(--onyx); /* Match your dark background */
+  color: var(--white-2); /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 8px; /* Rounded corners */
+  font-size: var(--fs-6); /* Font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center align text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.project-link-button:hover {
+  background-color: var(--light-gray); /* Change background color on hover */
+  transform: scale(1.07); /* Slightly enlarge on hover */
+}
+
+
+/* Styles over */ 
 
 
 
