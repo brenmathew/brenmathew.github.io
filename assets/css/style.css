@@ -1214,6 +1214,8 @@ main {
 .portfolio-modal-close-btn:hover {
   opacity: 1;
   background-color: var(--light-gray); /* Change background color on hover */
+  transform: scale(1.07); /* Slightly enlarge the button on hover */
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease; /* Smooth transitions for transform, opacity, and background color */
 }
 
 
