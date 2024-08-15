@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <img src="./assets/images/project-12.png" alt="Another Image" loading="lazy">
             </div>
           `;
-          projectLink = "https://github.com/brenmathew/Data-Analysis/blob/main/SuperMarketSales_Analysis.ipynb";
+          projectLink = "https://github.com/brenmathew/Super-Market-Sales_analysis";
           break;
 
         case "Netflix":
@@ -162,6 +162,24 @@ document.addEventListener("DOMContentLoaded", function() {
           projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/NetflixAnalysis_16769869059570/Netflix";
           break;
 
+         case "Building an ML model using AWS":
+          modalDescription = "The following project is built on Amazon Cloud. Here we have used the Sagemaker tool in AWS. AWS is capable of deploying Machine Learning models into the production environment, handling large LLM's depending on the company's requirements";
+          newImageSrc = "./assets/images/project-30.jpg";
+          additionalContent = `
+            <div class="blog-image">
+              <img src="./assets/images/project-31.png" alt="Additional Image" loading="lazy">
+            </div>
+            <p class="blog-description">This project is for AWS. Below are the key insights:</p>
+            <p class="blog-description">• Created a new instance</p>
+            <p class="blog-description">• Specified necessary roles for deploying the model</p>
+            <p class="blog-description">• Ran Tensorflow Code in Jupyter notebook to test the model</p>
+            <div class="blog-image">
+              <img src="./assets/images/project-32.png" alt="Another Image" loading="lazy">
+            </div>
+          `;
+          projectLink = "https://github.com/brenmathew/Sagemaker_TFModel";
+          break;
+          
         case "Fabric Defect Detection":
           modalDescription = "The approach used here is based on image segmentation, which involves partitioning the image into different regions based on their visual characteristics.";
           newImageSrc = "./assets/images/project-40.png";
