@@ -1,6 +1,6 @@
 ## Personal portfolio
 
-This is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+This is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript. The website contains various sections like Resume, portfolio to add your projects, certificates to add all of your learnings, and a contact page to reach out to me.
 
 ## Demo
 Here are some demo images:
@@ -9,7 +9,6 @@ Here are some demo images:
 ![vCard Desktop Demo](./website-demo-image/desktop2.png "Desktop Demo")
 ![vCard Desktop Demo](./website-demo-image/desktop3.png "Desktop Demo")
 ![vCard Desktop Demo](./website-demo-image/desktop4.png "Desktop Demo")
-
 
 ## Prerequisites
 

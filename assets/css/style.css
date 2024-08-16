@@ -831,6 +831,54 @@ main {
 }
 
 
+/* Selection and focus styles */
+::selection {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+:focus { 
+  outline-color: var(--orange-yellow-crayola); 
+}
+
+/* DOWNLOAD BUTTON RESUME styles */
+
+html { 
+  font-family: var(--ff-poppins); 
+}
+
+body { 
+  background: var(--smoky-black); 
+}
+
+/* Wrapper for centering the button */
+.resume-download-wrapper {
+  text-align: center;
+  margin: 20px 0; /* Adjust the spacing as needed */
+}
+
+/* Download Button Styles */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid var(--orange-yellow-crayola);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: var(--smoky-black);
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
+}
+
+
 /**
  * skills 
  */
