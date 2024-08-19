@@ -118,31 +118,25 @@ document.addEventListener("DOMContentLoaded", function() {
       let modalDescription, newImageSrc, additionalContent, projectLink;
 
       switch (projectTitle) {
-        case "Super Market sales analysis":
-          modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends.";
-          newImageSrc = "./assets/images/project-09.png";
+
+        case "Fabric Defect Detection":
+          modalDescription = "The approach used here is based on image segmentation, which involves partitioning the image into different regions based on their visual characteristics.";
+          newImageSrc = "./assets/images/project-40.png";
           additionalContent = `
             <div class="blog-image">
-              <img src="./assets/images/project-11.png" alt="Additional Image" loading="lazy">
+              <img src="./assets/images/project-41.png" alt="Additional Image" loading="lazy">
             </div>
-            <p class="blog-description">Below are some following questions analyzed on this dataset:</p>
-            <p class="blog-description">• What are the most selling Products?</p>
-            <p class="blog-description">• Which are the top 10 Products according to Sales?</p>
-            <p class="blog-description">• Which Products have proved to be the most profitable?</p>
-            <p class="blog-description">• What category sold the most?</p>
-            <p class="blog-description">• Which category is the most Profitable?</p>
-            <p class="blog-description">• What are the most selling products in each subcategory?</p>
-            <p class="blog-description">• Which customer segments are the most profitable?</p>
-            <p class="blog-description">• Which Shipping modes sold the most products?</p>
-            <p class="blog-description">• What markets sold the most Products?</p>
-            <p class="blog-description">• Which are the top 10 countries by sales?</p>
-            <p class="blog-description">• What's the average shipping cost for the top 10 different countries?</p>
+            <p class="blog-description">Benefits:</p>
+            <p class="blog-description">• Quality Control in Textile Industry</p>
+            <p class="blog-description">• Efficient Fabric Inspection</p>
+            <p class="blog-description">• Reduced Fabric Waste</p>
+            <p class="blog-description">• Improved Product Quality</p>
             <div class="blog-image">
-              <img src="./assets/images/project-12.png" alt="Another Image" loading="lazy">
+              <img src="./assets/images/project-42.png" alt="Another Image" loading="lazy">
             </div>
           `;
-          projectLink = "https://github.com/brenmathew/Super-Market-Sales_analysis";
-          break;
+          projectLink = "https://github.com/brenmathew/Fabric_Defect_detection";
+          break;  
 
         case "Netflix":
           modalDescription = "The following is a Netflix Analysis of various TV Shows and Movies acquired from a dataset through Kaggle. We can see the description and genres of movies all at once through this dashboard.";
@@ -179,26 +173,34 @@ document.addEventListener("DOMContentLoaded", function() {
           `;
           projectLink = "https://github.com/brenmathew/Sagemaker_TFModel";
           break;
+        
           
-        case "Fabric Defect Detection":
-          modalDescription = "The approach used here is based on image segmentation, which involves partitioning the image into different regions based on their visual characteristics.";
-          newImageSrc = "./assets/images/project-40.png";
+        case "Super Market sales analysis":
+          modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends.";
+          newImageSrc = "./assets/images/project-09.png";
           additionalContent = `
             <div class="blog-image">
-              <img src="./assets/images/project-41.png" alt="Additional Image" loading="lazy">
+              <img src="./assets/images/project-11.png" alt="Additional Image" loading="lazy">
             </div>
-            <p class="blog-description">Benefits:</p>
-            <p class="blog-description">• Quality Control in Textile Industry</p>
-            <p class="blog-description">• Efficient Fabric Inspection</p>
-            <p class="blog-description">• Reduced Fabric Waste</p>
-            <p class="blog-description">• Improved Product Quality</p>
+            <p class="blog-description">Below are some following questions analyzed on this dataset:</p>
+            <p class="blog-description">• What are the most selling Products?</p>
+            <p class="blog-description">• Which are the top 10 Products according to Sales?</p>
+            <p class="blog-description">• Which Products have proved to be the most profitable?</p>
+            <p class="blog-description">• What category sold the most?</p>
+            <p class="blog-description">• Which category is the most Profitable?</p>
+            <p class="blog-description">• What are the most selling products in each subcategory?</p>
+            <p class="blog-description">• Which customer segments are the most profitable?</p>
+            <p class="blog-description">• Which Shipping modes sold the most products?</p>
+            <p class="blog-description">• What markets sold the most Products?</p>
+            <p class="blog-description">• Which are the top 10 countries by sales?</p>
+            <p class="blog-description">• What's the average shipping cost for the top 10 different countries?</p>
             <div class="blog-image">
-              <img src="./assets/images/project-42.png" alt="Another Image" loading="lazy">
+              <img src="./assets/images/project-12.png" alt="Another Image" loading="lazy">
             </div>
           `;
-          projectLink = "https://github.com/brenmathew/Fabric_Defect_detection";
+          projectLink = "https://github.com/brenmathew/Super-Market-Sales_analysis";
           break;
-          
+
         case "Customer Analysis":
         modalDescription = "The following is a dashboard created on customer analysis for an E-commerce website. The visuals can be categorized based on sales from each state, revenue generated, and the various products purchased.";
         newImageSrc = "./assets/images/project-50.png";
