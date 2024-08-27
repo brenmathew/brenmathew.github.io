@@ -218,6 +218,24 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         projectLink = "https://public.tableau.com/app/profile/brenmathew/viz/CustomerAnalysis_16883802377440/Dashboard1";
         break;
+
+       case "Gender Diversity":
+        modalDescription = "The following is a dashboard created on Gender Diversity. This is a task I completed at my virtual internship program with PWC. The client requires a visual to understand the gender diversity across the company by understanding the relevant KPI's";
+        newImageSrc = "./assets/images/project-100.png";
+        additionalContent = `
+          <div class="blog-image">
+            <img src="./assets/images/project-101.png" alt="Additional Image" loading="lazy">
+          </div>
+          <p class="blog-description">Below are the key insights:</p>
+          <p class="blog-description">• Displays relevant KPIs in hiring, promotion, performance and turnover</p>
+          <p class="blog-description">• Understood the gender diversity across the company</p>
+          <p class="blog-description">• Key statistics to understand the reason for leavers and turnovers</p>
+          <div class="blog-image">
+            <img src="./assets/images/project-102.png" alt="Another Image" loading="lazy">
+          </div>
+        `;
+        projectLink = "https://github.com/brenmathew/Gender_Diversity";
+        break;
           
        case "Fraud Detection":
         modalDescription = "This project includes a collection of scripts and modules that handle various aspects of fraud detection, including data preprocessing, model training, evaluation, and prediction. It aims to provide an end-to-end solution for fraud detection tasks.";
