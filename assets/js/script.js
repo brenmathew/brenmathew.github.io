@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
           case "Predictive Modeling with Apache Spark":
           modalDescription = "Developed and implemented an end-to-end predictive analytics pipeline using Apache Spark and Databricks for classification. The project involves cleaning, transforming, and analyzing data to build predictive models using Logistic Regression and Random Forest algorithms";
-          newImageSrc = "./assets/images/project-400.jpg";
+          newImageSrc = "./assets/images/project-400.png";
           additionalContent = `
             <div class="blog-image">
               <img src="./assets/images/project-401.png" alt="Additional Image" loading="lazy">
