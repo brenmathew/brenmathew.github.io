@@ -176,10 +176,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
           case "Predictive Modeling with Apache Spark":
           modalDescription = "Developed and implemented an end-to-end predictive analytics pipeline using Apache Spark and Databricks for classification. The project involves cleaning, transforming, and analyzing data to build predictive models using Logistic Regression and Random Forest algorithms";
-          newImageSrc = "./assets/images/project-30.jpg";
+          newImageSrc = "./assets/images/project-400.jpg";
           additionalContent = `
             <div class="blog-image">
-              <img src="./assets/images/project-31.png" alt="Additional Image" loading="lazy">
+              <img src="./assets/images/project-401.png" alt="Additional Image" loading="lazy">
             </div>
             <p class="blog-description">Below are the key insights:</p>
             <p class="blog-description">• Data Preprocessing & Transformation</p>
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p class="blog-description">• Cross-Validation & Hyperparameter Tuning</p>
             <p class="blog-description">• Model Selection & Final Output</p>
             <div class="blog-image">
-              <img src="./assets/images/project-32.png" alt="Another Image" loading="lazy">
+              <img src="./assets/images/project-402.png" alt="Another Image" loading="lazy">
             </div>
           `;
           projectLink = "https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4083025305061776/3011085235679798/4451115955283076/latest.html";
