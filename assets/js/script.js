@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
           projectLink = "https://github.com/brenmathew/Sagemaker_TFModel";
           break;
 
-          case "Predictive Modelling with Apache Spark":
+          case "Predictive Modeling with Apache Spark":
           modalDescription = "Developed and implemented an end-to-end predictive analytics pipeline using Apache Spark and Databricks for classification. The project involves cleaning, transforming, and analyzing data to build predictive models using Logistic Regression and Random Forest algorithms";
           newImageSrc = "./assets/images/project-30.jpg";
           additionalContent = `
