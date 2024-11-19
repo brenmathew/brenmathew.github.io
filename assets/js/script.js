@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="blog-image">
               <img src="./assets/images/project-21.png" alt="Additional Image" loading="lazy">
             </div>
-            <p class="blog-description">This project is for Netflix. Below are the key insights:</p>
+            <p class="blog-description">This project is designed for Netflix. Below are the key insights:</p>
             <p class="blog-description">• Analyze TV shows and movie genres</p>
             <p class="blog-description">• Interactive dashboard to filter data</p>
             <p class="blog-description">• Comprehensive overview of Netflix's content library</p>
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="blog-image">
               <img src="./assets/images/project-31.png" alt="Additional Image" loading="lazy">
             </div>
-            <p class="blog-description">This project is for AWS. Below are the key insights:</p>
+            <p class="blog-description">This project is built on AWS. Below are the key insights:</p>
             <p class="blog-description">• Created a new instance</p>
             <p class="blog-description">• Specified necessary roles for deploying the model</p>
             <p class="blog-description">• Ran Tensorflow Code in Jupyter notebook to test the model</p>
@@ -173,7 +173,25 @@ document.addEventListener("DOMContentLoaded", function() {
           `;
           projectLink = "https://github.com/brenmathew/Sagemaker_TFModel";
           break;
-        
+
+          case "Predictive Modelling with Apache Spark":
+          modalDescription = "Developed and implemented an end-to-end predictive analytics pipeline using Apache Spark and Databricks for classification. The project involves cleaning, transforming, and analyzing data to build predictive models using Logistic Regression and Random Forest algorithms";
+          newImageSrc = "./assets/images/project-30.jpg";
+          additionalContent = `
+            <div class="blog-image">
+              <img src="./assets/images/project-31.png" alt="Additional Image" loading="lazy">
+            </div>
+            <p class="blog-description">Below are the key insights:</p>
+            <p class="blog-description">• Data Preprocessing & Transformation</p>
+            <p class="blog-description">• Model Development & Evaluation</p>
+            <p class="blog-description">• Cross-Validation & Hyperparameter Tuning</p>
+            <p class="blog-description">• Model Selection & Final Output</p>
+            <div class="blog-image">
+              <img src="./assets/images/project-32.png" alt="Another Image" loading="lazy">
+            </div>
+          `;
+          projectLink = "https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4083025305061776/3011085235679798/4451115955283076/latest.html";
+          break;
           
         case "Super Market sales analysis":
           modalDescription = "This project analyzes supermarket sales data to gain insights into product performance, customer behavior, and revenue trends.";
