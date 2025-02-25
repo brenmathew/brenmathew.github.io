@@ -326,8 +326,8 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
+  border-radius: 20px;
 }
-
 
 .info-content .name {
   color: var(--white-2);
@@ -2165,6 +2165,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
+  .avatar-box img { width: 150px; }
 
   .info-content .name {
     white-space: nowrap;
