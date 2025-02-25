@@ -326,7 +326,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 5px;
+  border-radius: 0px;
   overflow: hidden; 
   display: inline-block; 
 }
