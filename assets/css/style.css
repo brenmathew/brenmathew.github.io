@@ -326,13 +326,12 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 5px;
   overflow: hidden; 
   display: inline-block; 
 }
 
-.avatar-box img {
-  border-radius: 5%;  
+.avatar-box img { 
   object-fit: cover; 
 
 
