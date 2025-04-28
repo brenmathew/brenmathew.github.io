@@ -119,6 +119,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
       switch (projectTitle) {
 
+        case "A/B Testing on Grocery campaign data":
+          modalDescription = "This project applies A/B testing to a grocery retail campaign to evaluate the effectiveness of two different promotional mailers on customer sign-up rates. Statistical hypothesis testing techniques like Chi-Square Test and T-Tests were used to analyze outcomes and drive data-backed marketing decisions.";
+          newImageSrc = "./assets/images/project-110.png";
+          additionalContent = `
+            <div class="blog-image">
+              <img src="./assets/images/project-111.png" alt="Additional Image" loading="lazy">
+            </div>
+            <p class="blog-description">Benefits:</p>
+            <p class="blog-description">• Data-Driven Marketing Strategy</p>
+            <p class="blog-description">• Identification of More Effective Campaigns</p>
+            <p class="blog-description">• Improved Customer Targeting</p>
+            <p class="blog-description">• Enhanced Business Decision-Making Using Statistical Evidence</p>
+            <div class="blog-image">
+              <img src="./assets/images/project-112.png" alt="Another Image" loading="lazy">
+            </div>
+          `;
+          projectLink = "https://github.com/brenmathew/AB_Testing";
+          break
+          
         case "Fabric Defect Detection":
           modalDescription = "The approach used here is based on image segmentation, which involves partitioning the image into different regions based on their visual characteristics.";
           newImageSrc = "./assets/images/project-40.png";
